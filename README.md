@@ -14,6 +14,8 @@
 ## Participant Demographic Info
 
 ## Methods 
+### Communication Protocol
+Outside of our class meetings we will update each other daily on progress via Slack additional Zoom meetings will be added as needed. Group members will post next day availability for collaboration on work through slack. Collaborative documents, i.e. a google doc for suggested README.md edits and updates and our final presentation will be done through google workspace first for editing and then added and pushed to the github repository. 
 
 ### ELT (Jacob)
 
@@ -32,5 +34,9 @@ The following machine learning models will be tested:
     6. Light Gradient Boosting Model
     7. K - Nearest Neighbors Algorithm
     8. Deep Learning Neural Networks
+
+### SQL (Sarita)
+
+### HTML and Java (Sylvia)
  
 ## Results 
