@@ -46,7 +46,7 @@ The following machine learning models will be tested:
 
     8. Deep Learning Neural Networks
 
-### SQL (Sarita)
+### SQL & TABLEAU (Sarita)
 
 ### HTML and Java (Sylvia)
  
