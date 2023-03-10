@@ -48,9 +48,16 @@ The following machine learning models will be tested:
 
 ### SQL & TABLEAU (Sarita)
 
-    On the TABLEAU to demostrate our visualization we will be using the heart_cleaner.csv. while using this file we  have created 
-a Gender Breakdown.
-1 = 
+ On the TABLEAU to demonstrate our visualization we will be using the heart_cleaner.csv. while using this file we have created a Gender Breakdown the following numbers demonstrate women or men
+
+1= women
+2= men
+
+	On our first sheet (BMI_cardio) we are counting the BMI. On our sheet the bubbles break it down by BMI(bin) function. It also gives us the BMI count as well as the cardio count. 
+
+	On Sheet 3(ap_charts) it two bar charts broken down in men and women.  In these bar chart we are showing the ap_hi and the ap_lo of men vs women. In these bar chart it shows that women tend to have higher AP levels than men, even their ap_lo is higher on women. I believe because we have more data on women than men.
+    
+    
 ### HTML and Java (Sylvia)
 Currently working on the back-end web development. Will be incorporating Tableau visualizations. An initial skeleton HTML code was uploaded.
 
