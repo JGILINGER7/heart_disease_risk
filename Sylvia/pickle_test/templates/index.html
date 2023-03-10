@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KNN Results</title>
+</head>
+<body>
+    <h1>KNN Results</h1>
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Prediction</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
