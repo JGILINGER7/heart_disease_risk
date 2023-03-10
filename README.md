@@ -52,5 +52,6 @@ The following machine learning models will be tested:
 a Gender Breakdown.
 1 = 
 ### HTML and Java (Sylvia)
- 
+Currently working on the back-end web development. Will be incorporating Tableau visualizations. An initial skeleton HTML code was uploaded.
+
 ## Results 
