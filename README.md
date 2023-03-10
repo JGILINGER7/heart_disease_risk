@@ -48,6 +48,9 @@ The following machine learning models will be tested:
 
 ### SQL & TABLEAU (Sarita)
 
+    On the TABLEAU to demostrate our visualization we will be using the heart_cleaner.csv. while using this file we  have created 
+a Gender Breakdown.
+1 = 
 ### HTML and Java (Sylvia)
  
 ## Results 
