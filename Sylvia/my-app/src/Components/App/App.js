@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { Button, Paper } from '@material-ui/core';
-import SimpleForm from '../SimpleForm/SimpleForm';
+import HeartDiseaseRiskForm from '../HeartDiseaseRiskForm/HeartDiseaseRiskForm';
 function App() {
   return (
     <Container maxWidth="md" disableGutters={false} className="App">
@@ -20,7 +20,7 @@ function App() {
         <Button variant="contained" color="secondary">
           Secondary Button
         </Button> */}
-      <SimpleForm/>
+      <HeartDiseaseRiskForm/>
       </Paper>
     </Container>
   );

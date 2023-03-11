@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Grid, TextField, FormControlLabel, FormControl, FormLabel, Select, Button, MenuItem, RadioGroup, Radio, Text, Typography } from "@material-ui/core"
 import { render } from "@testing-library/react"
 
-const SimpleForm = () => {
+const HeartDiseaseRiskForm = () => {
 
   const defaultFormValues = {
     gender: "",
@@ -118,4 +118,4 @@ const SimpleForm = () => {
 
 }
 
-export default SimpleForm
+export default HeartDiseaseRiskForm
