@@ -8,7 +8,7 @@ import { Button, Paper } from '@material-ui/core';
 import SimpleForm from '../SimpleForm/SimpleForm';
 function App() {
   return (
-    <Container maxWidth="sm" className="App">
+    <Container maxWidth="md" disableGutters={false} className="App">
       <Paper>
         {/* <img src={logo} className="App-logo" alt="logo" />
         <Typography variant="h4" component="h1" gutterBottom>
