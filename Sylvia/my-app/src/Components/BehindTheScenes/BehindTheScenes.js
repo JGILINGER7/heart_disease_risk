@@ -1,25 +1,31 @@
 import React, { useEffect, useRef } from 'react';
-import { Grid, TextField, FormControlLabel, FormControl, FormLabel, Select, Button, MenuItem, RadioGroup, Radio, Text, Typography } from "@material-ui/core"
-import { render } from "@testing-library/react"
-import { Container, Paper } from "@material-ui/core"
+import { Button } from "@material-ui/core"
+import { useNavigate } from 'react-router-dom';
 
 const BehindTheScenes = () => {
-    // const { tableau } = window;
+    const ref = useRef(null)
+    const { tableau } = window;
+    const navigate = useNavigate(); 
+    const url = 'https://public.tableau.com/views/heart_disease_risk/ap_cardio?:language=en-US&:display_count=n&:origin=viz_share_link'
+    const routeChange = () =>{ 
+        let path = `/`; 
+        navigate(path);}
+    const initViz = () => {
+        new tableau.Viz(ref.current, url, {
+            width: "100%",
+            height: "90vh",
+        })
+    }
 
-    // const url =  "https://public.tableau.com/app/profile/sarita.garcia/viz/heart_disease_risk/ap_cardio";
-    // console.log(ref, tableau)
-    // new tableau.Viz(ref.current,url);
-    // function initViz(ref){
-    //   new tableau.Viz(ref.current,url);
-    // }
-    useEffect(() => {
-    
-    })
+    useEffect(initViz, []);
 
     return (
         <>
-        
-        </>
+        <div ref={ref} />
+        <Button variant="contained" color="primary" fullWidth={true} onClick={routeChange}>
+        Return back to form
+      </Button>
+      </>
     );
 }
 

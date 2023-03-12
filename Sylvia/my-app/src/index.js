@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Components/App/App';
-// import Form from './Components/Form'
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@material-ui/core';
 import {CssBaseline} from '@material-ui/core';

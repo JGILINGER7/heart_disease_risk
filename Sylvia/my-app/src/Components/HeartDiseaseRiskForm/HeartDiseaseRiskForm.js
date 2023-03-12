@@ -1,12 +1,10 @@
 import React, { useState } from "react"
-import { Grid, TextField, FormControlLabel, FormControl, FormLabel, Select, Button, MenuItem, RadioGroup, Radio, Text, Typography } from "@material-ui/core"
-import { render } from "@testing-library/react"
+import { Grid, TextField, FormControlLabel, Button, RadioGroup, Radio, Typography } from "@material-ui/core"
 import { Container, Paper } from "@material-ui/core"
-import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 const HeartDiseaseRiskForm = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const defaultFormValues = {
     gender: "",
     age: "",
@@ -37,8 +35,8 @@ const HeartDiseaseRiskForm = () => {
     setIsSubmitted(!isSubmitted)
   }
 
-  const routeChange = () =>{ 
-    let path = `/BehindTheScenes`; 
+  const routeChange = () => {
+    let path = `/BehindTheScenes`;
     navigate(path);
   }
 
@@ -130,7 +128,6 @@ const HeartDiseaseRiskForm = () => {
       </Paper>
     </Container>
   )
-
 }
 
 export default HeartDiseaseRiskForm
