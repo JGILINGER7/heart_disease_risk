@@ -12,6 +12,12 @@ The individual symptoms and conditions that make up heart disease are the leadin
 
 - To better understand the contributing factors in heart disease risk	
 
+## Data and Purpose
+We have pursued this data because heart disease is considered to be a mostly preventable disease. Lifestyle changes to diet, excercise, smoking, and drinking are the most obvious things but that doesn't mean people are always aware of their personal risk of heart disease. We are attempting to create an easy to use diagnostic tool, something that takes mostly binary considerations in and can give act as an early warning system for people who may be at risk. For our purposes it was important to find a dataset that doesn't require advanced medical competency we needed factors that could be easily understood and input by someone without training. 
+
+### Data 
+[Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
+
 ## Participant Demographic Info
 
 ## Methods 
