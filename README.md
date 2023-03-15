@@ -12,11 +12,36 @@ The individual symptoms and conditions that make up heart disease are the leadin
 
 - To better understand the contributing factors in heart disease risk	
 
-## Data and Purpose
-We have pursued this data because heart disease is considered to be a mostly preventable disease. Lifestyle changes to diet, excercise, smoking, and drinking are the most obvious things but that doesn't mean people are always aware of their personal risk of heart disease. We are attempting to create an easy to use diagnostic tool, something that takes mostly binary considerations in and can give act as an early warning system for people who may be at risk. For our purposes it was important to find a dataset that doesn't require advanced medical competency we needed factors that could be easily understood and input by someone without training. 
+## Purpose
 
-### Data 
-[Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
+- We have pursued this data because heart disease is considered to be mostly preventable disease. 
+
+- Lifestyle changes to diet, excercise, smoking, and drinking are the most obvious things but that doesn't mean people are always aware of their personal risk of heart disease.
+
+- We are attempting to create an easy to use diagnostic tool, something that takes mostly binary considerations in and act as an early warning system for people who may be at risk. 
+
+## Data 
+
+- The link to the dataset is: [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
+
+- For our purposes it was important to find a dataset that doesn't require advanced medical competency we needed factors that could be easily understood and input by someone without training. 
+
+- The dataset has the following columns which may act as the factors for Cardiovascular disease.
+
+	1. Age
+	2. Gender
+	3. Height
+	4. Weight
+	5. Ap_hi (Dystolic Pressure)
+	6. Ap_lo (Systolic Pressure)
+	7. Cholestrol
+	8. Glucose
+	9. Smoke
+	10. Alcohol
+	11. Active
+	12. Cardio (Does the patient have cardiovascular disease)
+
+
 
 ## Participant Demographic Info
 
