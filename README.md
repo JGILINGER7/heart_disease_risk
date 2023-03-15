@@ -47,6 +47,7 @@ The following machine learning models will be tested:
     8. Deep Learning Neural Networks
 
 ### SQL & TABLEAU (Sarita)
+	There had been Three tables created so far for the SQL part 
 
 - On the TABLEAU to demonstrate our visualization we will be using the heart_cleaner.csv. while using this file we have created a Gender Breakdown the following numbers demonstrate women or men
 
@@ -56,6 +57,8 @@ The following machine learning models will be tested:
 - On our first sheet (BMI_cardio) we are counting the BMI. On our sheet the bubbles break it down by BMI(bin) function. It also gives us the BMI count as well as the cardio count. 
 
 - On Sheet 3(ap_charts) it two bar charts broken down in men and women. In these bar chart we are showing the ap_hi and the ap_lo of men vs women. In these bar chart it shows that women tend to have higher AP levels than men, even their ap_lo is higher on women. I believe because we have more data on women than men.
+
+- 
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/ap_cardio?:language=en-US&:display_count=n&:origin=viz_share_link)
     
