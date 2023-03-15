@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Cardiovascular Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <h1>Enter the Patient statistics!</h1>
+ <div class="login">
+ <div>
+	
+	</div>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="age (years)" placeholder="age (years)" required="required" /><br>
+        <input type="text" name="Gender" placeholder="Gender" required="required" /><br>
+        <input type="text" name="BMI" placeholder="BMI" required="required" /><br>
+        <input type="text" name="Dystolic pressure" placeholder="Dystolic pressure" required="required" /><br>
+        <input type="text" name="Systolic pressure" placeholder="Systolic pressure" required="required" /><br>
+        <input type="text" name="cholesterol level" placeholder="cholesterol level" required="required" /><br>
+        <input type="text" name="glucose" placeholder="glucose" required="required" /><br>
+        <input type="text" name="smoke" placeholder="smoke" required="required" /><br>
+        <input type="text" name="alcohol" placeholder="alcohol" required="required" /><br>
+        <input type="text" name="active" placeholder="active" required="required" /><br>
+        <br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   <h2>Prediction Results:</h2>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
