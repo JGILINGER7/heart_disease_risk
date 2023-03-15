@@ -64,9 +64,8 @@ The following machine learning models will be tested:
 
 - On Sheet 3(ap_charts) it two bar charts broken down in men and women. In these bar chart we are showing the ap_hi and the ap_lo of men vs women. In these bar chart it shows that women tend to have higher AP levels than men, even their ap_lo is higher on women. I believe because we have more data on women than men.
 
-- 
     
-- Link to visualizations is: [Heart_disease_risk] (https://public.tableau.com/views/heart_disease_risk/BMI_cardio?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+- Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/BMI_cardio?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
     
 ### HTML and Java (Sylvia)
 Currently working on the back-end web development. Will be incorporating Tableau visualizations. An initial skeleton HTML code was uploaded.
