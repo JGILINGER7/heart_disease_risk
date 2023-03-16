@@ -108,7 +108,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 	1. [All Models](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/All_models.ipynb)
 
-	2. [Neural Network]()
+	2. [Neural Network](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/Neural_Network_hyper.ipynb)
 
 	3. [Gradient Boosting Classifier](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/Grandient_Boost_pkl.ipynb)
 
