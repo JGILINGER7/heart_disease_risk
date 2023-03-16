@@ -135,17 +135,20 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - Looking at the accuracy score we have choosen to use ***Gradient Boosting Classifier*** for the prediction.
 
-![Accuracy Score]()
+![Accuracy Score](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/acc_score.png)
 
 - The Confusion Matrix for the model is shown below.
 
-![Confusion Matrix]()
+![Confusion Matrix](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/cm.png)
 
 - The Classification Report for the model is shown below.
 
-![Classification Report]() 
+![Classification Report](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/class_report.png) 
+
+
 ### SQL & TABLEAU (Sarita)
-	There had been Three tables created so far for the SQL part 
+
+- There had been Three tables created so far for the SQL part 
 
 - On the TABLEAU to demonstrate our visualization we will be using the heart_cleaner.csv. while using this file we have created a Gender Breakdown the following numbers demonstrate women or men
 
