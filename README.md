@@ -20,6 +20,19 @@ The individual symptoms and conditions that make up heart disease are the leadin
 
 - We are attempting to create an easy to use diagnostic tool, something that takes mostly binary considerations in and act as an early warning system for people who may be at risk. 
 
+## Softwares: 
+
+- Anaconda - Python
+ 
+- Jupter Notebook 6.5.2
+
+- Tableau
+
+- Javascript(Flask)
+
+- HTML
+
+
 ## Data 
 
 - The link to the dataset is: [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
@@ -42,19 +55,29 @@ The individual symptoms and conditions that make up heart disease are the leadin
 	12. Cardio (Does the patient have cardiovascular disease)
 
 
-
 ### Participant Demographic Info Cleaned Data
--All partcipants were between the ages of 29 and 65.
--42,770 Women
--23,069 Men
--32,178 participants had some kind of cardiovascular disease
--25,151 were considered to have a healthy BMI
--24,329 were considered to be overweight
--11,723 were considered to be obese
--4,047 were considered to be severely obese
--589 were considered to be underweight
--5,767 were smokers
--No information was provided about race, ethnicity, or socioeconomic background. 
+
+- All partcipants were between the ages of 29 and 65.
+
+- 42,770 Women
+
+- 23,069 Men
+
+- 32,178 participants had some kind of cardiovascular disease
+
+- 25,151 were considered to have a healthy BMI
+
+- 24,329 were considered to be overweight
+
+- 11,723 were considered to be obese
+
+- 4,047 were considered to be severely obese
+
+- 589 were considered to be underweight
+
+- 5,767 were smokers
+
+- No information was provided about race, ethnicity, or socioeconomic background. 
 
 
 ## Methods 
@@ -63,32 +86,64 @@ The individual symptoms and conditions that make up heart disease are the leadin
 
 Outside of our class meetings we will update each other daily on progress via Slack additional Zoom meetings will be added as needed. Group members will post next day availability for collaboration on work through slack. Collaborative documents, i.e. a google doc for suggested README.md edits and updates and our final presentation will be done through google workspace first for editing and then added and pushed to the github repository. 
 
-### ELT (Jacob)
+### Data Exploration - ELT (Jacob)
 
-Using Pandas the original  heart.csv file ![heart_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_df.png)was paired down to drop unnecessary columns and data. This work continued with creating new columns to transform the age, which was originally in days to a more standard format of years. Three new columns were also created to make the data easier to understand, height and weight were originally only in metric so columns were created that converted that data to feet and pounds for easier comprehension. Lastly the height and weight data were combined to create a bmi category which would make later machine learning efforts simpler. After these changes were made we removed outliers and possible mistakes in the data. For blood pressure we used a rough standard based around reasonable survival of a cardiac incident. For height and weight we used a removal based on IQRx1.5. Finally we set up two data frames to be exported separately the first heart_cleaner_df ![heart_cleaner_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_cleaner.png) contained all columns, the second bmi_df ![bmi_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/bmi_df.png) dropped all height and weight info in favor of bmi as a metric 
+- Using Pandas the original  heart.csv file was paired down to drop unnecessary columns and data.
 
-### Performing Machine Learning on the transformed dataset. (Manasi)
+![heart_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_df.png)
 
-Using the data from the above step, various machine learning models are tested for their accuracy. The best performing model will be chosen to predict the outcome for this dataset.
+- This work continued with creating new columns to transform the age, which was originally in days to a more standard format of years. Three new columns were also created to make the data easier to understand, height and weight were originally only in metric so columns were created that converted that data to feet and pounds for easier comprehension. Lastly the height and weight data were combined to create a bmi category which would make later machine learning efforts simpler. After these changes were made we removed outliers and possible mistakes in the data. For blood pressure we used a rough standard based around reasonable survival of a cardiac incident. For height and weight we used a removal based on IQRx1.5. 
 
-The following machine learning models will be tested:
+- Finally we set up two data frames to be exported separately the first heart_cleaner_df contained all columns
 
-    1. Random Forest Classifier
+![heart_cleaner_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_cleaner.png) 
 
-    2. Gradient Boosting Classifier
+- The second bmi_df dropped all height and weight info in favor of bmi as a metric 
 
-    3. Logistic Regression
+![bmi_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/bmi_df.png)
 
-    4. Balanced Random Forest
+### Data Analysis - Performing Machine Learning (Manasi)
 
-    5. Support Vector Machines
+- The link to the scripts are:
 
-    6. Light Gradient Boosting Model
+	1. [All Models](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/All_models.ipynb)
 
-    7. K - Nearest Neighbors Algorithm
+	2. [Neural Network]()
 
-    8. Deep Learning Neural Networks
+	3. [Gradient Boosting Classifier](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/Grandient_Boost_pkl.ipynb)
 
+- Using the data from the above step, various machine learning models were tested for their accuracy. 
+
+- The following machine learning models were tested:
+
+|	Model Name		|	Accuracy	|
+|-------------------------------|-----------------------|
+|Gradient Boosting Classifier 	|	74.2%		|
+|				|			|
+|Random Forest Classifier	|	73.9%		|
+|				|			|
+|Logistic Regression		|	73.4%		|
+|				|			|
+|Support Vector Machines	|	73.2%		|
+|				|			|
+|Light Gradient Boosting Model	|	71.9%		|
+|				|			|
+|K - Nearest Neighbors Algorithm|	69.9%		|
+|				|			|
+|Deep Learning Neural Networks	|	74.3%		|
+
+
+- Looking at the accuracy score we have choosen to use ***Gradient Boosting Classifier*** for the prediction.
+
+![Accuracy Score]()
+
+- The Confusion Matrix for the model is shown below.
+
+![Confusion Matrix]()
+
+- The Classification Report for the model is shown below.
+
+![Classification Report]() 
 ### SQL & TABLEAU (Sarita)
 	There had been Three tables created so far for the SQL part 
 
