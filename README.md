@@ -43,7 +43,19 @@ The individual symptoms and conditions that make up heart disease are the leadin
 
 
 
-## Participant Demographic Info
+### Participant Demographic Info Cleaned Data
+-All partcipants were between the ages of 29 and 65.
+-42,770 Women
+-23,069 Men
+-32,178 participants had some kind of cardiovascular disease
+-25,151 were considered to have a healthy BMI
+-24,329 were considered to be overweight
+-11,723 were considered to be obese
+-4,047 were considered to be severely obese
+-589 were considered to be underweight
+-5,767 were smokers
+-No information was provided about race, ethnicity, or socioeconomic background. 
+
 
 ## Methods 
 
@@ -53,7 +65,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ### ELT (Jacob)
 
-Using Pandas the original data csv was paired down to drop unnecessary columns and data. This work continued with creating new columns to transform the age, which was originally in days to a more standard format of years. Three new columns were also created to make the data easier to understand, height and weight were originally only in metric so columns were created that converted that data to feet and pounds for easier comprehension. Lastly the height and weight data were combined to create a bmi category which would make later machine learning efforts simpler. After these changes were made we removed outliers and possible mistakes in the data. For blood pressure we used a rough standard based around reasonable survival of a cardiac incident. For height and weight we used a removal based on IQRx1.5. 
+Using Pandas the original  heart.csv file ![heart_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_df.png)was paired down to drop unnecessary columns and data. This work continued with creating new columns to transform the age, which was originally in days to a more standard format of years. Three new columns were also created to make the data easier to understand, height and weight were originally only in metric so columns were created that converted that data to feet and pounds for easier comprehension. Lastly the height and weight data were combined to create a bmi category which would make later machine learning efforts simpler. After these changes were made we removed outliers and possible mistakes in the data. For blood pressure we used a rough standard based around reasonable survival of a cardiac incident. For height and weight we used a removal based on IQRx1.5. Finally we set up two data frames to be exported separately the first heart_cleaner_df ![heart_cleaner_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_cleaner.png) contained all columns, the second bmi_df ![bmi_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/bmi_df.png) dropped all height and weight info in favor of bmi as a metric 
 
 ### Performing Machine Learning on the transformed dataset. (Manasi)
 
