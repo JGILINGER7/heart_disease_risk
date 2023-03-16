@@ -1,8 +1,10 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
 import pickle
 
 app = Flask(__name__)
+CORS(app)
 model = pickle.load(open('GBmodel.pkl', 'rb'))
 
 @app.route('/')
@@ -35,9 +37,18 @@ def predict_api():
     '''
     data = request.get_json(force=True)
     prediction = model.predict([np.array(list(data.values()))])
-
     output = prediction[0]
-    return jsonify(output)
+
+    if output == 0:
+        text = "Patient may not have Cardiovascular disease."
+    else:
+        text = "Patient may have Cardiovascular disease."
+    
+    response = jsonify({"results": text})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', '*')
+
+    return response
 
 if __name__ == "__main__":
     app.run(debug=True)

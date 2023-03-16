@@ -52,7 +52,7 @@ const HeartDiseaseRiskForm = () => {
       .then((res) => res.json())
       .then((data) => setResults(data.results))
       .then(() => setOpen(true))
-      .catch((res) => console.log(res))
+      .catch((res) => setResults(`Error! See: ${res}`))
   }
 
   const routeChange = () => {
