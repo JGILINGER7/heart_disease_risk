@@ -149,7 +149,15 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ![Feature_importance](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/Feature_importance.png)
 
-- The factors that affect the most are diastolic pressure, age, BMI(Body Mass Index) and systolic pressure.
+- The factors that affect the most are diastolic pressure, age, cholesterol, BMI(Body Mass Index) and systolic pressure.
+
+- Even thought factors such as gender, alcohol, smoke, glucose and being active have low importance in the dataset, they do contribute towards the cardiovascular health.
+
+- To justify, we tested the same model after eliminating the above factors. The accuracy of the model was lower than before. Thus we conclude that these factors do contriute todars cardiovasular health.
+
+- Below is the image of the accuracy after eliminating few factors.
+
+![acc_removing_features](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/acc_remove_features.png) 
 
 
 ### SQL & TABLEAU (Sarita)
