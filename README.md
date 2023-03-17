@@ -147,7 +147,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - The factors that affect cardiovascular health in descending order are shown below.
 
-![Feature_importance](https://github.com/JGILINGER7/heart_disease_risk/tree/main/Manasi/images)
+![Feature_importance](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/Feature_importance.png)
 
 - The factors that affect the most are diastolic pressure, age, BMI(Body Mass Index) and systolic pressure.
 
