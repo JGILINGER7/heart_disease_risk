@@ -148,7 +148,9 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ### SQL & TABLEAU (Sarita)
 
-- There had been Three tables created so far for the SQL part 
+- There was three tables created so far for the SQL part. Two table where created with the unclean data and the one table that was created with our main clean data
+- BMI table 
+ 
 
 - On the TABLEAU to demonstrate our visualization we will be using the heart_cleaner.csv. while using this file we have created a Gender Breakdown the following numbers demonstrate women or men
 
