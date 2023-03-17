@@ -1,13 +1,14 @@
 import React, { useState } from "react"
 import { Grid, TextField, FormControlLabel, Button, RadioGroup, Radio, Typography } from "@material-ui/core"
 import { Container, Paper } from "@material-ui/core"
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions } from "@material-ui/core"
 
 const HeartDiseaseRiskForm = () => {
   const navigate = useNavigate();
   const defaultFormValues = {
-    gender: "",
     age: "",
+    gender: "",
     BMI: "",
     ap_hi: "",
     ap_lo: "",
@@ -19,7 +20,13 @@ const HeartDiseaseRiskForm = () => {
   }
 
   const [formValues, setFormValues] = useState(defaultFormValues)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [results, setResults] = useState("You have not submitted data so you really shouldn't be seeing this")
+
+
+  const handleClose = () => {
+    setOpen(false)
+  }
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -31,17 +38,48 @@ const HeartDiseaseRiskForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formValues);
-    setIsSubmitted(!isSubmitted)
+    fetch("http://localhost:5000/predict_api",
+      {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': '*'
+        },
+        method: "POST",
+        body: JSON.stringify(formValues)
+      })
+      .then((res) => res.json())
+      .then((data) => setResults(data.results))
+      .then(() => setOpen(true))
+      .catch((res) => setResults(`Error! See: ${res}`))
   }
 
   const routeChange = () => {
-    let path = `/BehindTheScenes`;
-    navigate(path);
+    let path = `/BehindTheScenes`
+    navigate(path)
   }
 
   return (
     <Container maxWidth="md" disableGutters={false} className="App">
+      <Dialog
+        open={open}
+        onClose={handleClose}
+      >
+        <DialogTitle>
+          {"Heart Risk Results"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {results}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>
+            Okay
+          </Button>
+        </DialogActions>
+      </Dialog>
       <Paper>
         <form onSubmit={handleSubmit} style={{ "padding-left": "50px", "padding-right": "50px" }}>
           <Typography variant="h4">Heart Disease Risk</Typography>
@@ -116,14 +154,13 @@ const HeartDiseaseRiskForm = () => {
                 </RadioGroup>
               </Grid>
               <Button variant="contained" color="primary" type="submit" fullWidth={true}>
-                {isSubmitted ? `Hide Results` : `Submit`}
+                {`Submit`}
               </Button>
               <Button variant="contained" color="secondary" fullWidth={true} onClick={routeChange}>
                 Click here to learn more
               </Button>
             </Grid>
           </Grid>
-          <Typography id="results" hidden={!isSubmitted}>{`The values gathered are: ${JSON.stringify(formValues, null, 2)}`}</Typography>
         </form>
       </Paper>
     </Container>

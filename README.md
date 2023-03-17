@@ -162,7 +162,71 @@ Outside of our class meetings we will update each other daily on progress via Sl
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/BMI_cardio?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
     
-### HTML and Java (Sylvia)
-Currently working on the back-end web development. Will be incorporating Tableau visualizations. An initial skeleton HTML code was uploaded.
+### React, HTML, and JavaScript (Sylvia)
 
-## Results 
+## How to Run Front End Form
+
+### Prerequisite Installations
+
+In order to run the frontend part of this project, you will need to install 2 things: `Node` and `NPM`. Fortunately, both parts are available through the link below. Please note that clicking on the link will **immediately** start downloading a software called `nvm for windows`
+
+https://github.com/coreybutler/nvm-windows/releases/download/1.1.10/nvm-setup.exe
+
+This software will install `node` and `npm`. `Node` is an application that allows users to create JavaScript apps without needing to be ran on a web browser. `npm` is a package manager for node, just like how `pip` is a package manager for Python.
+
+Once the program is done downloading, go ahead and run it and keep everything as default during the installation. If you have any terminal open like `cmd`, `powershell`, or `git bash`, close it and reopen it after the installation is done.
+
+Re-open your terminal and then type:
+
+```
+nvm
+```
+
+You should see a wall of text appear. If your terminal cannot find it then... try reinstalling it again, or [follow the guide from step 2 on this link](https://github.com/coreybutler/nvm-windows/wiki#manual-installation).
+
+After confirming that `nvm` works, run the following command:
+
+```
+nvm install 19.3.0
+```
+
+This command will install `Node` `version 19.3.0` and the most compatible version of `npm` together.
+
+Once the process is complete, try running the following 2 commands:
+
+```
+node -v
+npm -v
+```
+
+If everything was done correctly, you should see `19.3.0` and `9.2.0` respectively!
+
+If it cannot find node, then you might have to type in the following command first:
+
+```
+nvm use 19.3.0
+```
+
+Once you run that command, run the two commands above!
+
+### Running the React Application!
+
+Now that you have `node` and `npm` properly set up, running the React application is much simpler!
+
+First you must `cd` into the correct directory. Navigate to the `Sylvia/my-app` directory on `git bash` or `powershell` using any method you'd like.  
+
+From there, you will have to run this **one time command**:
+
+```
+npm install
+```
+
+This will automatically install all of the packages that are required to run the application. You will know it is successful if you see something along the lines of: `added ## packages` on your terminal!
+
+Once that is done, run the following:
+
+```
+npm start
+```
+
+Please note that this command will stay running in the background until you close your terminal or do `CTRL+C`. Additionally, the above command will need to be ran every time you want to use the Heart Disease Risk form!
