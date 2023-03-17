@@ -153,7 +153,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - Even thought factors such as gender, alcohol, smoke, glucose and being active have low importance in the dataset, they do contribute towards the cardiovascular health.
 
-- To justify, we tested the same model after eliminating the above factors. The accuracy of the model was lower than before. Thus we conclude that these factors do contriute todars cardiovasular health.
+- To justify, we tested the same model after eliminating the above factors. The accuracy of the model was lower than before. Thus we can conclude that these factors do contriute towards cardiovasular health.
 
 - Below is the image of the accuracy after eliminating few factors.
 
