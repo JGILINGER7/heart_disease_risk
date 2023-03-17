@@ -145,6 +145,12 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ![Classification Report](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/class_report.png) 
 
+- The factors that affect cardiovascular health in descending order are shown below.
+
+![Feature_importance](https://github.com/JGILINGER7/heart_disease_risk/tree/main/Manasi/images)
+
+- The factors that affect the most are diastolic pressure, age, BMI(Body Mass Index) and systolic pressure.
+
 
 ### SQL & TABLEAU (Sarita)
 
