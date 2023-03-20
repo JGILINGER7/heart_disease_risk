@@ -6,7 +6,7 @@ const BehindTheScenes = () => {
     const ref = useRef(null)
     const { tableau } = window;
     const navigate = useNavigate(); 
-    const url = 'https://public.tableau.com/views/heart_disease_risk/ap_cardio?:language=en-US&:display_count=n&:origin=viz_share_link'
+    const url = 'https://public.tableau.com/views/heart_disease_risk/HeartDiseaseRisk?:language=en-US&:display_count=n&:origin=viz_share_link'
     const routeChange = () =>{ 
         let path = `/`; 
         navigate(path);}
