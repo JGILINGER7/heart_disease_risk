@@ -170,27 +170,27 @@ Outside of our class meetings we will update each other daily on progress via Sl
 	1= women
 	2= men
 
-![gender_breakdown]()
+![gender_breakdown](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/gender_breakdown.png)
 
 - In BMI_cardio chart we are counting the BMI. The bubbles break it down by BMI(bin) function. It gives us the BMI count as well as the cardio count. 
 
-![BMI_CARDIO]()
+![BMI_CARDIO](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/BMI_cardio.png)
 
 - In ap_charts, the bar graph is broken-down into men and women showing the diastolic pressure and the systolic pressure. We can observe that women tend to have higher blood pressure levels than men.
 
-![hi_low]()
+![hi_low](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/hi_low.png)
 
 - In blood_pressure chart, it shows how blood pressure is a factor in cardiovascular disease.
 
-![blood_pressure]() 
+![blood_pressure](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/blood_pressure.png) 
 
 - In the next bar graph it shows how the factors such as cholesterol, smoke, alcohol and blood sugar(glusose) affect in men and women.
 
-![factors_cardio]()
+![factors_cardio](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/factors_cardio.png)
 
 - The chart below shows how having a physically active lifestyle affect cardiovascular health.
 
-![active_age]()
+![active_age](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/active_age.png)
 
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/HeartDiseaseRisk?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
