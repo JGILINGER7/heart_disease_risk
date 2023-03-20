@@ -176,15 +176,21 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ![BMI_CARDIO]()
 
-
 - In ap_charts, the bar graph is broken-down into men and women showing the diastolic pressure and the systolic pressure. We can observe that women tend to have higher blood pressure levels than men.
 
-![](Breakdown_by_gender)
+![hi_low]()
 
 - In blood_pressure chart, it shows how blood pressure is a factor in cardiovascular disease.
 
-![]() 
+![blood_pressure]() 
 
+- In the next bar graph it shows how the factors such as cholesterol, smoke, alcohol and blood sugar(glusose) affect in men and women.
+
+![factors_cardio]()
+
+- The chart below shows how having a physically active lifestyle affect cardiovascular health.
+
+![active_age]()
 
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/HeartDiseaseRisk?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
