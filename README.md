@@ -153,7 +153,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - Even thought factors such as gender, alcohol, smoke, glucose and being active have low importance in the dataset, they do contribute towards the cardiovascular health.
 
-- To justify, we tested the same model after eliminating the above factors. The accuracy of the model was lower than before. Thus we can conclude that these factors do contriute towards cardiovasular health.
+- To justify, we tested the same model after eliminating the above factors. The accuracy of the model was lower than before. Thus we can conclude that these factors do contribute towards cardiovasular health.
 
 - Below is the image of the accuracy after eliminating few factors.
 
@@ -163,6 +163,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 ### SQL & TABLEAU (Sarita)
 
 - There was three tables created so far for the SQL part. Two table where created with the unclean data and the one table that was created with our main clean data
+
 - BMI table 
  
 
