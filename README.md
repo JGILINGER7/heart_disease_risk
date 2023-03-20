@@ -153,7 +153,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - Even thought factors such as gender, alcohol, smoke, glucose and being active have low importance in the dataset, they do contribute towards the cardiovascular health.
 
-- To justify, we tested the same model after eliminating the above factors. The accuracy of the model was lower than before. Thus we can conclude that these factors do contribute towards cardiovasular health.
+- To justify, we tested the same model after eliminating the above factors. The accuracy of the model was lower than before. Thus we can conclude that these factors do contriute towards cardiovasular health.
 
 - Below is the image of the accuracy after eliminating few factors.
 
@@ -162,19 +162,29 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ### SQL & TABLEAU (Sarita)
 
-- There was three tables created so far for the SQL part. Two table where created with the unclean data and the one table that was created with our main clean data
-
-- BMI table 
+- There were three tables created so far for the SQL part. Two table where created with the unclean data and the one table that was created with our main clean data BMI table.
  
 
-- On the TABLEAU to demonstrate our visualization we will be using the heart_cleaner.csv. while using this file we have created a Gender Breakdown the following numbers demonstrate women or men
+- On TABLEAU, to demonstrate our visualization, we will be using the heart_cleaner.csv. We have created a Gender Breakdown the following numbers demonstrate women and men. We can observe that we have more data on women than on men.
 
 	1= women
 	2= men
 
-- On our first sheet (BMI_cardio) we are counting the BMI. On our sheet the bubbles break it down by BMI(bin) function. It also gives us the BMI count as well as the cardio count. 
+![gender_breakdown]()
 
-- On Sheet 3(ap_charts) it two bar charts broken down in men and women. In these bar chart we are showing the ap_hi and the ap_lo of men vs women. In these bar chart it shows that women tend to have higher AP levels than men, even their ap_lo is higher on women. I believe because we have more data on women than men.
+- In BMI_cardio chart we are counting the BMI. The bubbles break it down by BMI(bin) function. It gives us the BMI count as well as the cardio count. 
+
+![BMI_CARDIO]()
+
+
+- In ap_charts, the bar graph is broken-down into men and women showing the diastolic pressure and the systolic pressure. We can observe that women tend to have higher blood pressure levels than men.
+
+![](Breakdown_by_gender)
+
+- In blood_pressure chart, it shows how blood pressure is a factor in cardiovascular disease.
+
+![]() 
+
 
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/HeartDiseaseRisk?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
