@@ -88,19 +88,19 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ### Data Exploration - ELT (Jacob)
 
-- Using Pandas the original  heart.csv file was paired down to drop unnecessary columns and data.
+- Using Pandas the original date file heart.csv file was paired down to drop unnecessary columns and data.
 
-![heart_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_df.png)
+![heart_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/main/Jacob/resources/heart_df.png)
 
 - This work continued with creating new columns to transform the age, which was originally in days to a more standard format of years. Three new columns were also created to make the data easier to understand, height and weight were originally only in metric so columns were created that converted that data to feet and pounds for easier comprehension. Lastly the height and weight data were combined to create a bmi category which would make later machine learning efforts simpler. After these changes were made we removed outliers and possible mistakes in the data. For blood pressure we used a rough standard based around reasonable survival of a cardiac incident. For height and weight we used a removal based on IQRx1.5. 
 
 - Finally we set up two data frames to be exported separately the first heart_cleaner_df contained all columns
 
-![heart_cleaner_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/heart_cleaner.png) 
+![heart_cleaner_df](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/resources/heart_cleaner.png) 
 
 - The second bmi_df dropped all height and weight info in favor of bmi as a metric 
 
-![bmi_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/661da80be3b5953ab9863a3b075956212596bdfa/Jacob/resources/bmi_df.png)
+![bmi_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/main/Jacob/resources/bmi_df.png)
 
 ### Data Analysis - Performing Machine Learning (Manasi)
 
