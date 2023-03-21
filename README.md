@@ -86,9 +86,10 @@ The individual symptoms and conditions that make up heart disease are the leadin
 
 Outside of our class meetings we will update each other daily on progress via Slack additional Zoom meetings will be added as needed. Group members will post next day availability for collaboration on work through slack. Collaborative documents, i.e. a google doc for suggested README.md edits and updates and our final presentation will be done through google workspace first for editing and then added and pushed to the github repository. 
 
+
 ### Data Exploration - ELT (Jacob)
 
-## Data Exploration
+#### Data Exploration
 
 - The link to the visualizations file is [visualizations](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/visualizations.ipynb)
 
@@ -108,7 +109,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ![bar_categorical](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/resources/bar_categorical.png) 
 
-## Transforming Data
+#### Transforming Data
 
 - Using Pandas the original date file heart.csv file was paired down to drop unnecessary columns and data.
 
@@ -123,6 +124,8 @@ Outside of our class meetings we will update each other daily on progress via Sl
 - The second bmi_df dropped all height and weight info in favor of bmi as a metric 
 
 ![bmi_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/main/Jacob/resources/bmi_df.png)
+
+
 
 ### Data Analysis - Performing Machine Learning (Manasi)
 
@@ -221,6 +224,8 @@ Outside of our class meetings we will update each other daily on progress via Sl
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/HeartDiseaseRisk?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
     
+
+
 ### React, HTML, and JavaScript (Sylvia)
 
 ## How to Run Front End Form
