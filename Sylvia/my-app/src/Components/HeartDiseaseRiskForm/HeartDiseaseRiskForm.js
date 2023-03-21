@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Grid, TextField, FormControlLabel, Button, RadioGroup, Radio, Typography } from "@material-ui/core"
 import { Container, Paper } from "@material-ui/core"
 import { useNavigate } from "react-router-dom"
@@ -18,8 +18,14 @@ const HeartDiseaseRiskForm = () => {
     alco: "",
     active: ""
   }
+  const defaultBMIData = {
+    weight: "",
+    height: "",
+    isMetric: "false"
+  }
 
   const [formValues, setFormValues] = useState(defaultFormValues)
+  const [bMIData, setBMIData] = useState(defaultBMIData)
   const [open, setOpen] = useState(false);
   const [results, setResults] = useState("You have not submitted data so you really shouldn't be seeing this")
 
@@ -35,6 +41,38 @@ const HeartDiseaseRiskForm = () => {
       [name]: value
     })
   }
+
+  const calculateBMI = (e) => {
+    const { name, value } = e.target
+    if(name === "isMetric") {
+      setBMIData({
+        ...defaultBMIData,
+        [name]: value
+      })
+    } else {
+      setBMIData({
+        ...bMIData,
+        [name]: value
+      })
+    }
+  }
+
+  useEffect(() => {
+    if (bMIData.weight > 0 && bMIData.height > 0) {
+      let bMIResults = 0
+      if (bMIData.isMetric === "true") {
+        bMIResults = Number(bMIData.weight) / Number(Math.pow(bMIData.height, 2))
+      }
+      else {
+        bMIResults = (Number(bMIData.weight) / Number(Math.pow(bMIData.height, 2))) * 703
+      }
+      bMIResults = Math.round(bMIResults * 10) / 10
+      setFormValues({
+        ...formValues,
+        BMI: bMIResults
+      })
+    }
+  }, [bMIData])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -81,13 +119,25 @@ const HeartDiseaseRiskForm = () => {
         </DialogActions>
       </Dialog>
       <Paper>
-        <form onSubmit={handleSubmit} style={{ "padding-left": "50px", "padding-right": "50px" }}>
+        <form onSubmit={handleSubmit} style={{ "paddingLeft": "50px", "paddingRight": "50px" }}>
           <Typography variant="h4">Heart Disease Risk</Typography>
-          <Grid container alignItems="baseline" justifyContent="left" direction="column" spacing={1}>
-            <Grid item justifyContent="flex-start">
-              <TextField id="age" name="age" label="Age" type="number" value={formValues.age} onChange={handleInputChange} required={true} />
+          <Grid container alignItems="baseline" direction="column" spacing={1}>
+            <Grid item >
+              <TextField style={{"marginBottom": "10px"}} id="age" name="age" label="Age" type="number" value={formValues.age} onChange={handleInputChange} required={true} />
             </Grid>
-            <Grid item justifyContent="flex-start">
+            <Grid item >
+              <RadioGroup name="isMetric" value={bMIData.isMetric} onChange={calculateBMI} row>
+                <FormControlLabel key="Calcuate BMI with m and kg" value="true" control={<Radio size="small" />} label="Calcuate BMI with m and kg" />
+                <FormControlLabel key="Calculate BMI with in and lbs" value="false" control={<Radio size="small" />} label="Calculate BMI with in and lbs" />
+              </RadioGroup>
+            </Grid>
+            <Grid item >
+              <TextField style={{"marginTop": "-20px"}} id="height" name="height" label={bMIData.isMetric === "true" ? "Height (m)" : "Height (in)"} type="number" value={bMIData.height} onChange={calculateBMI} required={false} />
+            </Grid>
+            <Grid item >
+              <TextField id="weight" name="weight" label={bMIData.isMetric === "true" ? "Weight (kg)" : "Weight (lbs)"} type="number" value={bMIData.weight} onChange={calculateBMI} required={false} />
+            </Grid>
+            <Grid item >
               <TextField id="BMI" name="BMI" label="BMI" type="number" value={formValues.BMI} onChange={handleInputChange} required={true} />
             </Grid>
             <Grid item>
@@ -100,7 +150,7 @@ const HeartDiseaseRiskForm = () => {
               <Grid item xs={4} >
                 <Typography align="left">Man or woman?</Typography>
               </Grid>
-              <Grid item xs={8} justifyContent="flex-end">
+              <Grid item xs={8} >
                 <RadioGroup name="gender" value={formValues.gender} onChange={handleInputChange} row>
                   <FormControlLabel key="Man" value="2" control={<Radio size="small" required={true} />} label="Man" />
                   <FormControlLabel key="Woman" value="1" control={<Radio size="small" />} label="Woman" />
