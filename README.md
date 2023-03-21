@@ -88,6 +88,28 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ### Data Exploration - ELT (Jacob)
 
+## Data Exploration
+
+- The link to the visualizations file is [visualizations](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/visualizations.ipynb)
+
+- Creating a BMI categorical column where all the data is grouped in 5 categories. This is visualized below
+
+![BMI_category](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/resources/BMI_category.png)
+
+- Plotting a box plot to check the age range.
+
+![age_box](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/resources/age_box.png)
+
+- Plotting box plots for continuous data columns such as age, height, weight ap-hi and ap_lo.
+
+![bar_continuous](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/resources/box_continuous.png)
+
+- Plotting bar graphs for categorical data columns such as gender, active, cholesterol,glucose, smoke and alcohol.
+
+![bar_categorical](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Jacob/resources/bar_categorical.png) 
+
+## Transforming Data
+
 - Using Pandas the original date file heart.csv file was paired down to drop unnecessary columns and data.
 
 ![heart_df](https://raw.githubusercontent.com/JGILINGER7/heart_disease_risk/main/Jacob/resources/heart_df.png)
