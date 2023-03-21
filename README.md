@@ -159,6 +159,10 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ![acc_removing_features](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/acc_remove_features.png) 
 
+- To further understand the correlation between the factors a correlation heatmap is generated.
+
+![correlation_heatmap](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Manasi/images/correlation_heatmap.png)
+
 
 ### SQL & TABLEAU (Sarita)
 
