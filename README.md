@@ -228,6 +228,26 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 ### React, HTML, and JavaScript (Sylvia)
 
+## How to Run Back End Form
+
+### Prerequisite Installations
+
+In order to run the backend part of this project, you will need to install `Flask` and the `Flask-Cors` extension. To learn more about Flask and its extension, please reference the following links:
+
+https://pypi.org/project/Flask/
+https://pypi.org/project/Flask-Cors/
+
+### Running Flask!
+You must `cd` into the correct directory. Navigate to the `Manasi/Gradient Boosting` directory. 
+
+Afterwards, run the following:
+
+```
+flask run
+```
+
+Please keep this command running in the background while running the frontend part of the project.
+
 ## How to Run Front End Form
 
 ### Prerequisite Installations
