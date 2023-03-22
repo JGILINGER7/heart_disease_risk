@@ -23,9 +23,9 @@ def predict():
     output = prediction[0]
 
     if output == 0:
-        text = "Patient may not have Cardiovascular disease."
+        text = "Patient may not have cardiovascular disease."
     else:
-        text = "Patient may have Cardiovascular disease."
+        text = "Patient may have cardiovascular disease."
    
     return render_template('index.html', prediction_text= text)
 
@@ -40,9 +40,9 @@ def predict_api():
     output = prediction[0]
 
     if output == 0:
-        text = "Patient may not have Cardiovascular disease."
+        text = "Patient may not have cardiovascular disease."
     else:
-        text = "Patient may have Cardiovascular disease."
+        text = "Patient may have cardiovascular disease."
     
     response = jsonify({"results": text})
     response.headers.add('Access-Control-Allow-Origin', '*')
