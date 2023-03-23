@@ -24,13 +24,15 @@ The individual symptoms and conditions that make up heart disease are the leadin
 
 - Anaconda - Python
  
-- Jupter Notebook 6.5.2
+- Jupyter Notebook 6.5.2
 
 - Tableau
 
 - Javascript(Flask)
 
-- HTML
+- Node JS
+
+- React
 
 
 ## Data 
@@ -314,7 +316,7 @@ npm start
 
 Please note that this command will stay running in the background until you close your terminal or do `CTRL+C`. Additionally, the above command will need to be ran every time you want to use the Heart Disease Risk form!
 
-![Form](./Sylvia/Resources/heart_disease_risk_form.png)
+![Form](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sylvia/resources/heart_disease_risk_form.png)
 
 ## Conclusion
 We were able to get the project past proof of concept and into a functioning app. While time restrictions have kept us from launching the app and running further testing we do intend to launch it in the immediate future. The tool we have created "A Beat Away" functions and can receive data and output if the user is at likely risk for heart disease. Although future improvements in the nuances of the dataset and additional categories that are known to affect heart disease risk will improve the model, we have been able to show that it is possible to use a machine learning algorithm as a diagnostic tool for heart disease.
