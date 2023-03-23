@@ -144,7 +144,7 @@ const HeartDiseaseRiskForm = () => {
               <TextField id="ap_hi" name="ap_hi" label="Systolic Blood Pressure" type="number" value={formValues.ap_hi} onChange={handleInputChange} required={true} />
             </Grid>
             <Grid item>
-              <TextField id="ap_lo" name="ap_lo" label="Diostolic Blood Pressure" type="number" value={formValues.ap_lo} onChange={handleInputChange} required={true} />
+              <TextField id="ap_lo" name="ap_lo" label="Diastolic Blood Pressure" type="number" value={formValues.ap_lo} onChange={handleInputChange} required={true} />
             </Grid>
             <Grid container alignItems="center" spacing={1} direction="row" >
               <Grid item xs={4} >
