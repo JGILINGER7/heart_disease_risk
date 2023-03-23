@@ -203,24 +203,23 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - In BMI_cardio chart we are counting the BMI. The bubbles break it down by BMI(bin) function. It gives us the BMI count as well as the cardio count. 
 
-![BMI_CARDIO](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/BMI_cardio.png)
+<img width="939" alt="BMI Cardio" src="https://user-images.githubusercontent.com/115046550/227072716-d491cfee-ee84-4b2b-afcf-4262115d4ad9.png">
 
 - In ap_charts, the bar graph is broken-down into men and women showing the diastolic pressure and the systolic pressure. We can observe that women tend to have higher blood pressure levels than men.
 
-![hi_low](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/hi_low.png)
+<img width="340" alt="Blood Pressure by Gender" src="https://user-images.githubusercontent.com/115046550/227072153-7d05dc5a-1e53-4b47-8e09-4762507c3e3b.png">
 
 - In blood_pressure chart, it shows how blood pressure is a factor in cardiovascular disease.
 
-![blood_pressure](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/blood_pressure.png) 
+<img width="1115" alt="Blood pressure" src="https://user-images.githubusercontent.com/115046550/227070986-fcb6d975-ea12-434d-860d-8800e58fd8ba.png"> 
 
 - In the next bar graph it shows how the factors such as cholesterol, smoke, alcohol and blood sugar(glusose) affect in men and women.
 
-![factors_cardio](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/factors_cardio.png)
+<img width="680" alt="Lifestyle Factor" src="https://user-images.githubusercontent.com/115046550/227071358-48414f0b-a1f3-4f84-bcd6-baa23aa202ed.png">
 
 - The chart below shows how having a physically active lifestyle affect cardiovascular health.
 
-![active_age](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/active_age.png)
-
+<img width="1120" alt="Age Active" src="https://user-images.githubusercontent.com/115046550/227070399-f8c6a3f7-94fd-4a82-a15e-4fdf695fc760.png">
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/HeartDiseaseRisk?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
     
@@ -314,3 +313,6 @@ npm start
 ```
 
 Please note that this command will stay running in the background until you close your terminal or do `CTRL+C`. Additionally, the above command will need to be ran every time you want to use the Heart Disease Risk form!
+
+## Conclusion
+We were able to get the project past proof of concept and into a functioning app. While time restrictions have kept us from launching the app and running further testing we do intend to launch it in the immediate future. The tool we have created "A Beat Away" functions and can receive data and output if the user is at likely risk for heart disease. Although future improvements in the nuances of the dataset and additional categories that are known to affect heart disease risk will improve the model, we have been able to show that it is possible to use a machine learning algorithm as a diagnostic tool for heart disease.
