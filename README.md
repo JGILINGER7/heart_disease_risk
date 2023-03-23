@@ -211,7 +211,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - In blood_pressure chart, it shows how blood pressure is a factor in cardiovascular disease.
 
- 
+<img width="1115" alt="Blood pressure" src="https://user-images.githubusercontent.com/115046550/227070986-fcb6d975-ea12-434d-860d-8800e58fd8ba.png"> 
 
 - In the next bar graph it shows how the factors such as cholesterol, smoke, alcohol and blood sugar(glusose) affect in men and women.
 
