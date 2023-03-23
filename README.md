@@ -203,11 +203,10 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - In BMI_cardio chart we are counting the BMI. The bubbles break it down by BMI(bin) function. It gives us the BMI count as well as the cardio count. 
 
-<img width="340" alt="Blood Pressure by Gender" src="https://user-images.githubusercontent.com/115046550/227072153-7d05dc5a-1e53-4b47-8e09-4762507c3e3b.png">
 
 - In ap_charts, the bar graph is broken-down into men and women showing the diastolic pressure and the systolic pressure. We can observe that women tend to have higher blood pressure levels than men.
 
-![hi_low](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sarita/images/hi_low.png)
+<img width="340" alt="Blood Pressure by Gender" src="https://user-images.githubusercontent.com/115046550/227072153-7d05dc5a-1e53-4b47-8e09-4762507c3e3b.png">
 
 - In blood_pressure chart, it shows how blood pressure is a factor in cardiovascular disease.
 
