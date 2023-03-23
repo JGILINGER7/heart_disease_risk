@@ -47,8 +47,8 @@ The individual symptoms and conditions that make up heart disease are the leadin
 	2. Gender
 	3. Height
 	4. Weight
-	5. Ap_hi (Dystolic Pressure)
-	6. Ap_lo (Systolic Pressure)
+	5. Ap_hi (Systolic Pressure)
+	6. Ap_lo (Diastolic Pressure)
 	7. Cholestrol
 	8. Glucose
 	9. Smoke
