@@ -215,6 +215,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - In the next bar graph it shows how the factors such as cholesterol, smoke, alcohol and blood sugar(glusose) affect in men and women.
 
+<img width="680" alt="Lifestyle Factor" src="https://user-images.githubusercontent.com/115046550/227071358-48414f0b-a1f3-4f84-bcd6-baa23aa202ed.png">
 
 - The chart below shows how having a physically active lifestyle affect cardiovascular health.
 
