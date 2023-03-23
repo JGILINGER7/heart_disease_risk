@@ -318,5 +318,8 @@ Please note that this command will stay running in the background until you clos
 
 ![Form](https://github.com/JGILINGER7/heart_disease_risk/blob/main/Sylvia/resources/heart_disease_risk_form.png)
 
-## Conclusion
-We were able to get the project past proof of concept and into a functioning app. While time restrictions have kept us from launching the app and running further testing we do intend to launch it in the immediate future. The tool we have created "A Beat Away" functions and can receive data and output if the user is at likely risk for heart disease. Although future improvements in the nuances of the dataset and additional categories that are known to affect heart disease risk will improve the model, we have been able to show that it is possible to use a machine learning algorithm as a diagnostic tool for heart disease.
+### Conclusion
+
+We were able to get the project past proof of concept and into a functioning app. While time restrictions have kept us from launching the app and running further testing we do intend to launch it in the immediate future. The tool we have created "A Beat Away" functions and can receive data and output if the user is at likely risk for heart disease. 
+
+Although future improvements in the nuances of the dataset and additional categories that are known to affect heart disease risk will improve the model, we have been able to show that it is possible to use a machine learning algorithm as a diagnostic tool for heart disease.
