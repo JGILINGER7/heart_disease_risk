@@ -2,7 +2,7 @@
 
 ## Overview
 
-The individual symptoms and conditions that make up heart disease are the leading cause of death worldwide, they are also largely preventable. The risk factors associated with heart disease are widely known and are assessed in regular doctor’s check ups. This means that it should be able to be analyzed through a machine learning algorithm. This would create a quick and easy analysis tool that takes out some of the human error in how physicians assess this risk.
+The individual symptoms and conditions that make up heart disease are the leading cause of death worldwide. They are also largely preventable. The risk factors associated with heart disease are widely known and are assessed in regular doctor check ups. This means that it should be able to be analyzed through a machine learning algorithm. This would create a quick and easy analysis tool that would aid physicians in assessing this risk.
 
 ## Goals
 
@@ -320,6 +320,7 @@ Please note that this command will stay running in the background until you clos
 
 ### Conclusion
 
-We were able to get the project past proof of concept and into a functioning app. While time restrictions have kept us from launching the app and running further testing we do intend to launch it in the immediate future. The tool we have created "A Beat Away" functions and can receive data and output if the user is at likely risk for heart disease. 
+We were able to get the project past proof of concept and into a functioning app. While time restrictions have kept us from launching the app and running further testing we do intend to launch it in the immediate future. The tool we have created "A Beat Away" functions and can receive data and provide output if the user is at likely risk for heart disease. 
 
 Although future improvements in the nuances of the dataset and additional categories that are known to affect heart disease risk will improve the model, we have been able to show that it is possible to use a machine learning algorithm as a diagnostic tool for heart disease.
+
