@@ -218,8 +218,7 @@ Outside of our class meetings we will update each other daily on progress via Sl
 
 - The chart below shows how having a physically active lifestyle affect cardiovascular health.
 
-
-
+<img width="1120" alt="Age Active" src="https://user-images.githubusercontent.com/115046550/227070399-f8c6a3f7-94fd-4a82-a15e-4fdf695fc760.png">
     
 - Link to visualizations is: [Heart_disease_risk](https://public.tableau.com/views/heart_disease_risk/HeartDiseaseRisk?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
     
